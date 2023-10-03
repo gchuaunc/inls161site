@@ -1,27 +1,70 @@
+<mat-sidenav-container *ngIf="isMobile">
+    <mat-sidenav #menu mode="over" [fixedInViewport]="true" class="sidenav">
+        <button mat-icon-button (click)="menu.close()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <ul class="nav-list">
+            <li class="side-item">
+                <a href="/" mat-button>
+                    <mat-icon class="nav-icon">home</mat-icon>
+                    Home
+                </a>
+            </li>
+            <li class="side-item">
+                <a href="/about" mat-button>
+                    <mat-icon class="nav-icon">info</mat-icon>
+                    About
+                </a>
+            </li>
+            <li class="side-item">
+                <a href="/interests" mat-button>
+                    <mat-icon class="nav-icon">lightbulb</mat-icon>
+                    Interests
+                </a>
+            </li>
+            <li class="side-item">
+                <a href="/classes" mat-button>
+                    <mat-icon class="nav-icon">menu_book</mat-icon>
+                    Classes
+                </a>
+            </li>
+        </ul>
+        <div class="sidenav-close-container">
+            <button (click)="menu.close()" class="sidenav-close"></button>
+        </div>
+    </mat-sidenav>
+</mat-sidenav-container>
 <div class="nav-root">
     <ul class="nav-list">
+        <li class="nav-item" *ngIf="isMobile">
+            <button mat-icon-button aria-label="Menu" (click)="menu.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </li>
         <li class="nav-item">
             <a href="/" style="padding: 8px;">
-                <img src="assets/gc161.png" style="height: 36px;">
+                <img src="/assets/gc161.png" style="height: 36px;" alt="Logo of GC 161 site">
             </a>
         </li>
-        <li class="nav-item">
-            <a href="/about">
-                <mat-icon class="nav-icon">info</mat-icon>
-                About
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="/interests">
-                <mat-icon class="nav-icon">lightbulb</mat-icon>
-                Interests
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="/classes">
-                <mat-icon class="nav-icon">menu_book</mat-icon>
-                Classes
-            </a>
-        </li>
+        <div *ngIf="!isMobile">
+            <li class="nav-item">
+                <a href="/about">
+                    <mat-icon class="nav-icon">info</mat-icon>
+                    About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/interests">
+                    <mat-icon class="nav-icon">lightbulb</mat-icon>
+                    Interests
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/classes">
+                    <mat-icon class="nav-icon">menu_book</mat-icon>
+                    Classes
+                </a>
+            </li>
+        </div>
     </ul>
 </div>
