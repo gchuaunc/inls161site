@@ -1,3 +1,5 @@
 <app-navbar [isMobile]="isMobile"></app-navbar>
 <div class="nav-spacer"></div>
-<router-outlet></router-outlet>
+<div [className]="isMobile ? 'mobile-content' : 'desktop-content'">
+    <router-outlet></router-outlet>
+</div>
