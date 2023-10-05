@@ -15,6 +15,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { FooterComponent } from './footer/footer.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 
@@ -35,7 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     MatIconModule,
     MatSidenavModule,
     MatButtonModule,
-    MatDividerModule
+    MatDividerModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

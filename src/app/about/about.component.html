@@ -1,1 +1,63 @@
-<p>about works!</p>
+<div class="content">
+    <br><br>
+    <h1>About</h1>
+    <p>Hi! My name is Gabrian Chua. As of Fall 2023, I'm a Junior at the University of North Carolina at Chapel Hill. I'm studying for a B.S. in Computer Science and I am minoring in data science, hoping to also minor in information systems.</p>
+    <h2>Interesting Facts</h2>
+    <p>Some interesting facts about me:</p>
+    <ul>
+        <li>My main laptop, which I use every day for school, runs Linux Mint 21.2! Ever since it was dropped for Windows 11 support, I explored using Linux as the main operating system alongside Windows 10. I already had a bit of experience with Linux in the form of Debian, since I had owned a Raspberry Pi for a few years. Eventually, I needed to reclaim some space and realized I hadn't booted into Windows in the last 2 months. So, I decided to clear the Windows partition and reallocate that space for Linux's ext4! I found that Linux Mint can do most everything I need it to, except for a few choice apps that are only available for Windows (in which case, I have a QEMU Virtual Machine with Windows 11).</li>
+        <li>Hate ads? Me too. I run a <a href="https://pi-hole.net/">Pi-Hole</a> node on my home network, which is a DNS-level ad blocker. The way it works you install the software onto a Linux computer (in my case, a small Debian Linux headless laptop server), which starts up a DNS server that stands in between your network's devices and a real DNS provider like Google or Cloudflare. Then, when the Pi-Hole gets a request for a known ad-domain like doubleclick.net, it rejects the request and sends back a garbage IP address like 0.0.0.0 so that the client cannot load the ad. Not only does this remove ads, but it also makes your network faster because it doesn't need to spend bandwidth loading the network-heavy images and videos!</li>
+    </ul>
+    <mat-divider></mat-divider><br>
+    <h2>My Sites</h2>
+    <p>Below are some of the sites where I publish my work, as well as links to documents about me. Expand the panels to view descriptions and follow the links!</p>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+            Digital Archives
+        </mat-panel-title>
+        <mat-panel-description>
+            Archives of my projects since 2017
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>This is my Digital Archives site, which archives almost a decade of my projects throughout the years. I wrote this site from scratch using Angular, so a lot of it will look similar to this site! I build and host the site myself on my Raspberry Pi 4 at home. I obtained the third level domain for free from <a href="https://www.dynu.com/en-US/">Dynu</a>, which is a dynamic DNS service that gives out a few third level domains for free. The first computer programming language I learned was freeBASIC, which was a version of Microsoft qBASIC but compiled for Windows. Those projects could not be archived on that site, so the first ones on that site are when I first learned HTML, CSS, and JavaScript and began creating small web tools to help me out in my daily work. From there, I began learning Unity and built my games for WebGL, and today I'm making Angular apps.</p>
+        <a mat-fab color="primary" class="link-out" href="https://cgixe.dynu.net"><mat-icon>open_in_new</mat-icon></a>
+    </mat-expansion-panel><br>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+            Itch.io
+        </mat-panel-title>
+        <mat-panel-description>
+            My games for jams and competitions
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>This is my Itch.io page, where I publish my games, typically for game jams and competitions. Some game jams I've been a part of include Ludum Dare and the UNC game development club biannual jam. I also have a few games on here which I created for a class.</p>
+        <a mat-fab color="primary" class="link-out" href="https://cgixe.itch.io"><mat-icon>open_in_new</mat-icon></a>
+    </mat-expansion-panel><br>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+            LinkedIn
+        </mat-panel-title>
+        <mat-panel-description>
+            My LinkedIn page
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>This is my LinkedIn profile. Feel free to connect with me!</p>
+        <a mat-fab color="primary" class="link-out" href="https://www.linkedin.com/in/gabrianrchua/"><mat-icon>open_in_new</mat-icon></a>
+    </mat-expansion-panel><br>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+            My r&eacute;sum&eacute;
+        </mat-panel-title>
+        <mat-panel-description>
+            View or download my resume as of 2023
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>This is the latest revision of resume as of Fall 2023, minus any significantly sensitive information which has been redacted.</p>
+        <a mat-fab color="primary" class="link-out" href="/assets/resume.pdf"><mat-icon>download</mat-icon></a>
+    </mat-expansion-panel><br>
+    <app-footer></app-footer>
+</div>
