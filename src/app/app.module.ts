@@ -16,6 +16,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { FooterComponent } from './footer/footer.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ProgrammingComponent } from './interests/programming/programming.component';
+import { GamedevComponent } from './interests/gamedev/gamedev.component';
+import { BikefixComponent } from './interests/bikefix/bikefix.component';
+import { CyclingComponent } from './interests/cycling/cycling.component';
 
 
 
@@ -27,7 +31,11 @@ import { MatExpansionModule } from '@angular/material/expansion';
     AboutComponent,
     InterestsComponent,
     ClassesComponent,
-    FooterComponent
+    FooterComponent,
+    ProgrammingComponent,
+    GamedevComponent,
+    BikefixComponent,
+    CyclingComponent
   ],
   imports: [
     BrowserModule,
