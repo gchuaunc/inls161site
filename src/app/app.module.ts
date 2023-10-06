@@ -9,11 +9,11 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { InterestsComponent } from './interests/interests.component';
 import { ClassesComponent } from './classes/classes.component';
-
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
 import { FooterComponent } from './footer/footer.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ProgrammingComponent } from './interests/programming/programming.component';
@@ -45,7 +45,8 @@ import { CyclingComponent } from './interests/cycling/cycling.component';
     MatSidenavModule,
     MatButtonModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
