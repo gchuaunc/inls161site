@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-content>
+        <div class="carousel" [style.height.px]="height">
+            <div class="carousel-slide"
+                    *ngFor="let image of images; index as i"
+                    [class.inactive]="animationState[i] == 'hidden'"
+                    [@slideInOut]="animationState[i]">
+                <img [src]="image.url" alt="{{ image.alt }}" class="carousel-image">
+            </div>
+        </div>
+        <div class="carousel-buttons">
+            <button mat-mini-fab color="primary" (click)="prevSlide()" class="carousel-buttons-left">
+                <mat-icon>navigate_before</mat-icon>
+            </button>
+            <button mat-mini-fab color="primary" (click)="nextSlide()" class="carousel-buttons-right">
+                <mat-icon>navigate_next</mat-icon>
+            </button>
+        </div>
+    </mat-card-content>
+</mat-card>

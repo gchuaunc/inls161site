@@ -1,0 +1,20 @@
+.inactive {
+    display: none;
+}
+.carousel-image {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.carousel {
+    overflow: hidden;
+}
+.carousel-buttons {
+    height: 48px;
+}
+.carousel-buttons-left {
+    float: left;
+}
+.carousel-buttons-right {
+    float: right;
+}
