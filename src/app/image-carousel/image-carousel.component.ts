@@ -17,28 +17,21 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
   ]
 })
 export class ImageCarouselComponent {
-  @Input() images: { url: string, alt: string, height: number }[] = [];
+  @Input({ required: true }) images: { url: string, alt: string }[] = [];
   currentIndex: number = 0;
   animationState: string[] = [];
-  height: number = 0;
+  @Input({ required: true }) height: number = 300;
 
   ngOnInit() {
     if (this.images.length == 0) {
       console.warn("ImageCarouselComponent has no images to display");
       return;
     }
-    
-    let maxHeight: number = this.images[0].height;
 
     this.animationState = this.animationState.concat("idle")
     for (let i = 1; i < this.images.length; i++) {
       this.animationState = this.animationState.concat("hidden");
-      if (this.images[i].height > maxHeight) {
-        maxHeight = this.images[i].height;
-      }
     }
-
-    this.height = maxHeight;
   }
 
   prevSlide() {
