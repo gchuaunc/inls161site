@@ -11,7 +11,6 @@ import { ClassesComponent } from './classes/classes.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ProgrammingComponent } from './interests/programming/programming.component';
-import { GamedevComponent } from './interests/gamedev/gamedev.component';
 import { BikefixComponent } from './interests/bikefix/bikefix.component';
 import { CyclingComponent } from './interests/cycling/cycling.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
@@ -34,7 +33,6 @@ import { MatCardModule } from '@angular/material/card';
     ClassesComponent,
     FooterComponent,
     ProgrammingComponent,
-    GamedevComponent,
     BikefixComponent,
     CyclingComponent,
     ImageCarouselComponent

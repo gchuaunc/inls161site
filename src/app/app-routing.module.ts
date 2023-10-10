@@ -6,7 +6,6 @@ import { InterestsComponent } from './interests/interests.component';
 import { ClassesComponent } from './classes/classes.component';
 import { BikefixComponent } from './interests/bikefix/bikefix.component';
 import { CyclingComponent } from './interests/cycling/cycling.component';
-import { GamedevComponent } from './interests/gamedev/gamedev.component';
 import { ProgrammingComponent } from './interests/programming/programming.component';
 
 const routes: Routes = [
@@ -15,7 +14,6 @@ const routes: Routes = [
   { path: 'interests', component: InterestsComponent },
   { path: 'interests/bikefix', component: BikefixComponent },
   { path: 'interests/cycling', component: CyclingComponent },
-  { path: 'interests/gamedev', component: GamedevComponent },
   { path: 'interests/programming', component: ProgrammingComponent },
   { path: 'classes', component: ClassesComponent },
   { path: '**', redirectTo: '/' }
