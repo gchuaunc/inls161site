@@ -9,13 +9,13 @@ import { CyclingComponent } from './interests/cycling/cycling.component';
 import { ProgrammingComponent } from './interests/programming/programming.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'about', component: AboutComponent },
-  { path: 'interests', component: InterestsComponent },
-  { path: 'interests/bikefix', component: BikefixComponent },
-  { path: 'interests/cycling', component: CyclingComponent },
-  { path: 'interests/programming', component: ProgrammingComponent },
-  { path: 'classes', component: ClassesComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full', title: "Home | oneSIXone" },
+  { path: 'about', component: AboutComponent, title: "About | oneSIXone" },
+  { path: 'interests', component: InterestsComponent, title: "Interests | oneSIXone" },
+  { path: 'interests/bikefix', component: BikefixComponent, title: "Bikefix | oneSIXone" },
+  { path: 'interests/cycling', component: CyclingComponent, title: "Cycling | oneSIXone" },
+  { path: 'interests/programming', component: ProgrammingComponent, title: "Programming | oneSIXone" },
+  { path: 'classes', component: ClassesComponent, title: "Classes | oneSIXone" },
   { path: '**', redirectTo: '/' }
 ];
 
