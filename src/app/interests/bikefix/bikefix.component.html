@@ -14,5 +14,9 @@
     <h2>Today</h2>
     <p>I recently attended the 2023 bike auction and bought five bikes, all needing work. I actually wanted to buy more, but they wouldn't physically fit in my small Nissan Leaf hatchback, despite buying a bike carrier! I continue to fix and flip bikes for as long as the supply lasts. It really dries up in the colder months, but during the warmer months there is plenty to go around. I enjoy turning a wrench and solving problems, and hope to continue doing this for as long as I have interest (and money)!</p>
     <app-image-carousel [images]="bikeImages" [height]="440"></app-image-carousel>
+    <br><a [routerLink]="['/interests']" mat-raised-button color="primary">
+        <mat-icon>lightbulb</mat-icon>
+        Back to all interests
+    </a><br><br>
     <app-footer></app-footer>
 </div>

@@ -5,13 +5,13 @@
         </button>
         <ul class="nav-list">
             <li class="side-item">
-                <a href="/" mat-button>
+                <a [routerLink]="['/']" mat-button>
                     <mat-icon class="nav-icon">home</mat-icon>
                     Home
                 </a>
             </li>
             <li class="side-item">
-                <a href="/about" mat-button>
+                <a [routerLink]="['/about']" mat-button>
                     <mat-icon class="nav-icon">info</mat-icon>
                     About
                 </a>
@@ -22,14 +22,14 @@
                     Interests
                 </a>
                 <mat-menu #mobileinterestsmenu="matMenu">
-                    <a mat-menu-item href="/interests"><mat-icon>lightbulb</mat-icon>All interests</a>
-                    <a mat-menu-item href="/interests/programming"><mat-icon>terminal</mat-icon>Programming</a>
-                    <a mat-menu-item href="/interests/bikefix"><mat-icon>build</mat-icon>Bike fix and flip</a>
-                    <a mat-menu-item href="/interests/cycling"><mat-icon>directions_bike</mat-icon>Cycling and MTB</a>
+                    <a mat-menu-item [routerLink]="['/interests']"><mat-icon>lightbulb</mat-icon>All interests</a>
+                    <a mat-menu-item [routerLink]="['/interests/programming']"><mat-icon>terminal</mat-icon>Programming</a>
+                    <a mat-menu-item [routerLink]="['/interests/bikefix']"><mat-icon>build</mat-icon>Bike fix and flip</a>
+                    <a mat-menu-item [routerLink]="['/interests/cycling']"><mat-icon>directions_bike</mat-icon>Cycling and MTB</a>
                 </mat-menu>
             </li>
             <li class="side-item">
-                <a href="/classes" mat-button>
+                <a [routerLink]="['/classes']" mat-button>
                     <mat-icon class="nav-icon">menu_book</mat-icon>
                     Classes
                 </a>
@@ -48,13 +48,13 @@
             </button>
         </li>
         <li class="nav-item">
-            <a href="/" style="padding: 8px;">
+            <a [routerLink]="['/']" style="padding: 8px;">
                 <img src="/assets/gc161.png" style="height: 36px;" alt="Logo of GC 161 site">
             </a>
         </li>
         <div *ngIf="!isMobile">
             <li class="nav-item">
-                <a href="/about">
+                <a [routerLink]="['/about']">
                     <mat-icon class="nav-icon">info</mat-icon>
                     About
                 </a>
@@ -65,14 +65,14 @@
                     Interests
                 </a>
                 <mat-menu #interestsmenu="matMenu">
-                    <a mat-menu-item href="/interests"><mat-icon>lightbulb</mat-icon>All interests</a>
-                    <a mat-menu-item href="/interests/programming"><mat-icon>terminal</mat-icon>Programming</a>
-                    <a mat-menu-item href="/interests/bikefix"><mat-icon>build</mat-icon>Bike fix and flip</a>
-                    <a mat-menu-item href="/interests/cycling"><mat-icon>directions_bike</mat-icon>Cycling and MTB</a>
+                    <a mat-menu-item [routerLink]="['/interests']"><mat-icon>lightbulb</mat-icon>All interests</a>
+                    <a mat-menu-item [routerLink]="['/interests/programming']"><mat-icon>terminal</mat-icon>Programming</a>
+                    <a mat-menu-item [routerLink]="['/interests/bikefix']"><mat-icon>build</mat-icon>Bike fix and flip</a>
+                    <a mat-menu-item [routerLink]="['/interests/cycling']"><mat-icon>directions_bike</mat-icon>Cycling and MTB</a>
                 </mat-menu>
             </li>
             <li class="nav-item">
-                <a href="/classes">
+                <a [routerLink]="['/classes']">
                     <mat-icon class="nav-icon">menu_book</mat-icon>
                     Classes
                 </a>
